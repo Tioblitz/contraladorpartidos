@@ -1,0 +1,12 @@
+@mixin boton($color, $color-hover){
+    margin: 20px;
+    padding: 10px;
+    background-color: $color;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 15px;
+
+    &:hover {
+        background-color: $color-hover;
+        transition: background-color 0.5s;
+    }
+}

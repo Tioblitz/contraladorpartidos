@@ -1,0 +1,45 @@
+main {
+    padding: 50px 50px 0 10px;
+    display: flex;
+    column-gap: 50px;
+
+    section {
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.103);
+        border: 1px solid rgba(0, 0, 0, 0.158);
+        border-radius: 15px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+
+
+        article {
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: center;
+            background-color: #8282823c;
+            border-radius: 15px;
+            align-self: center;
+        }
+    }
+}
+
+.boton {
+    @include boton($gris, $gris-accion);
+}
+
+.boton-iniciar {
+    @include boton($verde, $verde-accion);
+}
+
+.boton-cancelar {
+    @include boton($rojo, $rojo-accion);
+}
+
+.active {
+    font-weight: 500;
+}
