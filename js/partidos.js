@@ -48,7 +48,7 @@ function iniciarPartido() {
         let tiempoActualPartido = new Date().getTime();
         let tiempoPartido = tiempoActualPartido - inicioTiempoPartido;
         let minutos = Math.floor((tiempoPartido % (1000 * 60 * 60)) / (1000 * 60));
-        minutos += 40;
+        minutos += 39;
         minutos = (minutos < 10) ? "0" + minutos : minutos;
         let segundos = Math.floor((tiempoPartido % (1000 * 60)) / 1000);
         segundos = (segundos < 10) ? "0" + segundos : segundos;
