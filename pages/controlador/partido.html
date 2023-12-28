@@ -10,6 +10,8 @@
     <!-- Link bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Link JS -->
+    
 </head>
 
 <body>
@@ -28,10 +30,10 @@
                     <!-- Páginas -->
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="">Mis partidos</a>
+                            <a class="nav-link" aria-current="page" href="../../index.html">Mis partidos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="">Resultados</a>
+                            <a class="nav-link" href="./../resultado.html">Resultados</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="">Mi perfil</a>
@@ -67,14 +69,14 @@
         <section>
             <h1>Controlador partido - $Turno$</h1>
             <br>
-            <article>
+            <article id="contenedor">
                 <h2>Cancha 1</h2>
                 <h3>Senior</h3>
                 <h4>Caleuche 0 - 0 Bocheros</h3>
                 <div>
-                    <button class="boton-iniciar">Iniciar partido</button>
-                    <button class="boton">Agregar Jugador</button>
-                    <button class="boton-cancelar">Cancelar partido</button>
+                    <button class="boton-iniciar" id="boton-iniciarPartido">Iniciar partido</button>
+                    <button class="boton" disabled>Agregar Jugador</button>
+                    <button class="boton-cancelar" disabled>Cancelar partido</button>
                 </div>
                 
             </article>
@@ -85,7 +87,9 @@
     <footer>
 
     </footer>
-
+    <!-- Link JS -->
+    <script src="../../js/partidos.js"></script>
+    <!-- Link bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
