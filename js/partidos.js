@@ -103,7 +103,8 @@ function terminarPartido() {
         <button class="boton-cancelar" disabled>Cancelar partido</button>
     </div>
     `
-    
+    let botonIniciarPartido = document.querySelector("#boton-iniciarPartido");
+    botonIniciarPartido.addEventListener("click", iniciarPartido);
     
 }
 
