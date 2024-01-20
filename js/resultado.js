@@ -15,7 +15,7 @@
 })();
 
 // Buscamos los datos de nuestro archivo local
-fetch("../js/partidos.json")
+fetch("controladorpartidos/js/partidos.json")
     .then((res) => (res.json()))
     .then((data) => {
         data.forEach((partido) => {
