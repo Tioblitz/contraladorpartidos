@@ -15,7 +15,8 @@
 })();
 
 // Buscamos los datos de nuestro archivo local
-fetch("/js/partidos.json")
+let url = "https://tioblitz.github.io/controladorpartidos/js/partidos.json"
+fetch(url)
     .then((res) => (res.json()))
     .then((data) => {
         data.forEach((partido) => {
