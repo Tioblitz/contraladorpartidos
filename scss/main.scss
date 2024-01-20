@@ -1,8 +1,10 @@
 @import "utilities/reset";
 @import "utilities/variables";
 @import "utilities/mixin";
+@import "utilities/media-querys";
 
 @import "components/main";
 @import "components/aside";
-@import "components/footer";
-@import "components/header";
+
+@import "pages/resultado";
+@import "pages/partido";

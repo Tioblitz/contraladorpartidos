@@ -1,0 +1,17 @@
+#contenedorPartido {
+    border: 1px solid #9b9b9b5d;
+    border-radius: 15px;
+    margin: 5px;
+    padding: 5px;
+}
+
+#resultadoPagina {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 15% 0 15%;
+    gap: 10px;
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+}

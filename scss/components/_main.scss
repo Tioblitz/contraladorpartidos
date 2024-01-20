@@ -1,29 +1,47 @@
 main {
-    padding: 50px 50px 0 10px;
+    padding: 50px 10px 20px 10px;
     display: flex;
     column-gap: 50px;
 
     section {
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.103);
-        border: 1px solid rgba(0, 0, 0, 0.158);
-        border-radius: 15px;
-        padding: 20px;
         display: flex;
         flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
         text-align: center;
-
-
+        background-color: #b7b7b65a;
+        border-radius: 15px;
+        align-self: center;
+        padding: 10px;
+        
         article {
-            width: 80%;
+            width: 100%;
             display: flex;
             flex-direction: column;
-            flex-wrap: wrap;
-            justify-content: center;
             text-align: center;
-            background-color: #8282823c;
-            border-radius: 15px;
-            align-self: center;
+
+            #inputsFiltrar {
+                padding: 10px
+            }
+
+            .lista-jugadores {
+                width: 400px;
+                background-color: rgb(245, 245, 245);
+                align-self: center;
+                text-align: justify;
+                border: 0px solid;
+                border-radius: 10px;
+                padding: 10px;
+            }
+
+            h3 {
+                font-size: medium;
+            }
+
+            h4 {
+                font-size: small;
+            }
         }
     }
 }
@@ -43,3 +61,4 @@ main {
 .active {
     font-weight: 500;
 }
+

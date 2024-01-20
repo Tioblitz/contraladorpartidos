@@ -1,0 +1,42 @@
+[
+    {
+        "primerEquipo":" Inter ",
+        "segundoEquipo":" USM ",
+        "golesEquipo1":"2",
+        "golesEquipo2":" 1 ",
+        "Division":"Senior",
+        "Cancha":"Cancha 4"
+    },
+    {
+        "primerEquipo":" Caleuche ",
+        "segundoEquipo":" Zánganos ",
+        "golesEquipo1":"0",
+        "golesEquipo2":" 2 ",
+        "Division":"Senior",
+        "Cancha":"Cancha 2"
+    },
+    {
+        "primerEquipo":" Coyotes ",
+        "segundoEquipo":" Bocheros ",
+        "golesEquipo1":"1",
+        "golesEquipo2":" 1 ",
+        "Division":"Dorada",
+        "Cancha":"Cancha 3"
+    },
+    {
+        "primerEquipo":" Caleuche ",
+        "segundoEquipo":" Inter ",
+        "golesEquipo1":"2",
+        "golesEquipo2":" 2 ",
+        "Division":"Junior",
+        "Cancha":"Cancha 1"
+    },
+    {
+        "primerEquipo":" Stade ",
+        "segundoEquipo":" Coyotes ",
+        "golesEquipo1":"2",
+        "golesEquipo2":" 1 ",
+        "Division":"Diamante",
+        "Cancha":"Cancha 3"
+    }
+]

@@ -11,31 +11,106 @@
   background-color: #85d672;
 }
 
+@media screen and (max-width: 768px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+  main aside {
+    margin-top: 10px;
+    width: 90%;
+    line-height: 40px;
+    background-color: rgba(183, 183, 182, 0.3529411765);
+    border: 1px solid rgba(183, 183, 182, 0.3529411765);
+    border-radius: 15px;
+  }
+  main section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(183, 183, 182, 0.3529411765);
+    border-radius: 15px;
+    align-self: center;
+    padding-top: 20px;
+  }
+  main section article {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  main section article #inputsFiltrar {
+    flex-direction: column;
+    align-self: center;
+    width: 90%;
+    row-gap: 10px;
+  }
+  main section .contenedorRow {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  main section .contenedorColumn {
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgb(245, 245, 245);
+    border: 0px solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+  }
+  main section .contenedorColumn h3 {
+    text-align: center;
+  }
+  main section .contenedorColumn div {
+    text-align: center;
+  }
+}
 main {
-  padding: 50px 50px 0 10px;
+  padding: 50px 10px 20px 10px;
   display: flex;
   column-gap: 50px;
 }
 main section {
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.103);
-  border: 1px solid rgba(0, 0, 0, 0.158);
-  border-radius: 15px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-main section article {
-  width: 80%;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
   text-align: center;
-  background-color: rgba(130, 130, 130, 0.2352941176);
+  background-color: rgba(183, 183, 182, 0.3529411765);
   border-radius: 15px;
   align-self: center;
+  padding: 10px;
+}
+main section article {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+main section article #inputsFiltrar {
+  padding: 10px;
+}
+main section article .lista-jugadores {
+  width: 400px;
+  background-color: rgb(245, 245, 245);
+  align-self: center;
+  text-align: justify;
+  border: 0px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+main section article h3 {
+  font-size: medium;
+}
+main section article h4 {
+  font-size: small;
 }
 
 .boton {
@@ -80,7 +155,8 @@ main section article {
 
 aside {
   margin-top: 50px;
-  width: 250px;
+  width: 25%;
+  height: 250px;
   padding: 20px 0 20px 20px;
   line-height: 40px;
   background-color: rgba(183, 183, 182, 0.3529411765);
@@ -105,6 +181,52 @@ aside li a:visited {
 aside li a:hover {
   text-decoration: none;
   color: rgba(0, 0, 0, 0.29);
+}
+
+#contenedorPartido {
+  border: 1px solid rgba(155, 155, 155, 0.3647058824);
+  border-radius: 15px;
+  margin: 5px;
+  padding: 5px;
+}
+
+#resultadoPagina {
+  display: flex;
+  flex-direction: column;
+  padding: 5% 15% 0 15%;
+  gap: 10px;
+}
+#resultadoPagina section {
+  display: flex;
+  flex-direction: column;
+}
+
+.goles {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contenedorRow {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.contenedorColumn {
+  display: flex;
+  flex-flow: column wrap;
+  text-align: justify;
+  background-color: rgb(245, 245, 245);
+  border: 0px solid;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  gap: 10px;
+}
+.contenedorColumn h3 {
+  text-align: center;
+}
+.contenedorColumn div {
+  text-align: center;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,20 +1,29 @@
+// Buscamos los datos del partido en el localStorage
 (function () {
-    let resultado = JSON.parse(localStorage.getItem("Partido 1"));
-    if (resultado) {
-        let equipo1 = resultado.primerEquipo;
-        let equipo2 = resultado.segundoEquipo;
-        let goles1 = resultado.golesEquipo1;
-        let goles2 = resultado.golesEquipo2;
-        let division = resultado.Division;
-        let cancha = resultado.Cancha;
+    if (localStorage.getItem("Partido 1")) {
+        let { primerEquipo, segundoEquipo, golesEquipo1, golesEquipo2, Division, Cancha } = JSON.parse(localStorage.getItem("Partido 1"));
         document.querySelector("#resultados").innerHTML = `
-            <h2> ${equipo1} ${goles1} - ${goles2} ${equipo2} </h2>
-            <h6> División ${division} - ${cancha} </h3>
-        `
+            <div id="contenedorPartido"><h2> ${primerEquipo} ${golesEquipo1} - ${golesEquipo2} ${segundoEquipo} </h2>
+            <h6> División ${Division} - ${Cancha} </h3> </div>
+        `;
         }
     else {
         document.querySelector("#resultados").innerHTML = `
-            <p>No se encontraron partidos.</p>
+            <p>No se encontraron partidos nuevos.</p>
         `
     }
 })();
+
+// Buscamos los datos de nuestro archivo local
+fetch("/js/partidos.json")
+    .then((res) => (res.json()))
+    .then((data) => {
+        data.forEach((partido) => {
+            let { primerEquipo, segundoEquipo, golesEquipo1, golesEquipo2, Division, Cancha } = partido;
+            let historialPartidos = document.querySelector("#historialPartidos");
+            historialPartidos.innerHTML += `
+            <div id="contenedorPartido"><h2> ${primerEquipo} ${golesEquipo1} - ${golesEquipo2} ${segundoEquipo} </h2>
+            <h6> División ${Division} - ${Cancha} </h3> </div>
+        `;
+        });
+    })
